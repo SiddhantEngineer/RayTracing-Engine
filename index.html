@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <title>RayTracing Engine</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    canvas{
+        position: fixed;
+    }
+    #objects{
+        /* position: fixed;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 200px;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif; */
+        display: none;
+    }
+    .objects-object{
+        /* padding: 10px; */
+    }
+    .selected-object{
+        background: white;
+        color:black;
+    }
+    #button-container{
+        position: fixed;
+        bottom: 0;
+        width: 150px;
+        height: 150px;
+        display: grid;
+        grid-template-rows: 33.33% 33.33% 33.33%;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+    }
+    #info-container{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: white;
+        padding: 10px;
+    }
+</style>
+<body>
+    <canvas id="viewport"></canvas>
+    <div id="objects"></div>
+    <div id="button-container">
+        <button id="buttonD" style="grid-column: 3 / 4; grid-row: 2 / 3">D</button>
+        <button id="buttonA" style="grid-column: 1 / 2; grid-row: 2 / 3">A</button>
+        <button id="buttonW" style="grid-column: 2 / 3; grid-row: 1 / 2">W</button>
+        <button id="buttonS" style="grid-column: 2 / 3; grid-row: 3 / 4">S</button>
+    </div>
+    <div id="info-container">INFO</div>
+</body>
+<script src="./js/index.js" type="module"></script>
+</html>
